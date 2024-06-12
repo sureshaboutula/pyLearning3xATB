@@ -17,6 +17,6 @@ Eg: 2**5 = 2 * 2 * 2 * 2 * 2 # 2 to the power of 5
 
 
 # What does the ^ operator do in Python, and in what context is it commonly used?
-1. It performs XOR operation
+1. It performs bitwise XOR operation
 2. It compares each bit and set it to 1 if only one is 1, otherwise it is set to 0 if both are 1 or both are 0
 Eg: 6 ^ 3 = 0110 ^ 0011 = 0101 = 5
