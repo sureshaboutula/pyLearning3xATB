@@ -1,0 +1,22 @@
+# Explain the difference between the = operator and the == operator in Python.
+
+# "=" operator :
+1. It is assignment operator
+2. It is used to assign a value to variables
+
+# "==" operator
+1. It is comparison or relational operator
+2. It is used to check the equality or inequality of two values or variables
+3. It returns boolean value - True or False
+
+
+# What does the ** operator do in Python, and how is it used?
+1. It is Exponentiation operator
+2. It does exponentiation
+Eg: 2**5 = 2 * 2 * 2 * 2 * 2 # 2 to the power of 5
+
+
+# What does the ^ operator do in Python, and in what context is it commonly used?
+1. It performs XOR operation
+2. It compares each bit and set it to 1 if only one is 1, otherwise it is set to 0 if both are 1 or both are 0
+Eg: 6 ^ 3 = 0110 ^ 0011 = 0101 = 5
