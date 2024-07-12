@@ -5,7 +5,7 @@
 2. It is used to assign a value to variables
 
 # "==" operator
-1. It is comparison or relational operator
+1. It is comparison or relational or equality operator
 2. It is used to check the equality or inequality of two values or variables
 3. It returns boolean value - True or False
 
