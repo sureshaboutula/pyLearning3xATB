@@ -4,6 +4,8 @@
 # Token - Auth
 # Payload
 import requests
+import allure
+import pytest
 
 
 def create_token():
@@ -19,9 +21,9 @@ def create_token():
     return token
 
 def create_booking():
-        base_url = "https://restful-booker.herokuapp.com"
-        base_path = "/booking"
-        URL = base_url + base_path
+        Url = "https://restful-booker.herokuapp.com/booking"
+        # base_path = "/booking"
+        # URL = base_url + base_path
         headers = {"Content-Type": "application/json"}
         payload = {
             "firstname": "Jim",
@@ -34,10 +36,11 @@ def create_booking():
             },
             "additionalneeds": "Lunch"
         }
-        response = requests.post(url=URL, headers=headers, json=payload, verify=False)
+        response = requests.post(url=Url, headers=headers, json=payload, verify=False)
         #assert response.status_code == 200
         responseData = response.json()
         booking_id = responseData["bookingid"]
+        print(booking_id)
         return booking_id
 
 
