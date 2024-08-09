@@ -47,24 +47,9 @@ def get_allbookings_req():
     base_url = "https://restful-booker.herokuapp.com"
     base_path = "/booking"
     Allurl = base_url + base_path
-
     response = requests.get(url=Allurl, verify=False)
     assert response.status_code == 200
     responseData = response.json()
-    #print(responseData)
     return responseData
-
-@pytest.fixture(scope="session")
-def get_randon_bookingid_req():
-    base_url = "https://restful-booker.herokuapp.com"
-    base_path = "/booking"
-    Allurl = base_url + base_path
-    response = requests.get(url=Allurl, verify=False)
-    assert response.status_code == 200
-    responseData = response.json()
-    # print(responseData)
-    #bookingid_num = random.randint(0, len(get_allbookings_req))
-    booking_id = responseData[random.randint(0, len(responseData))]["bookingid"]
-    return booking_id
 
 
