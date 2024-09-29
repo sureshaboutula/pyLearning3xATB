@@ -3,7 +3,7 @@ import pytest
 import requests
 import random
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="module")
 def create_token():
     url = "https://restful-booker.herokuapp.com/auth"
     headers = {"Content-Type": "application/json"}
@@ -18,7 +18,7 @@ def create_token():
     print(token)
     return token
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="module")
 def create_booking_id():
     base_url = "https://restful-booker.herokuapp.com"
     base_path = "/booking"
@@ -42,7 +42,7 @@ def create_booking_id():
     booking_id = responseData["bookingid"]
     return booking_id
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="module")
 def get_allbookings_req():
     base_url = "https://restful-booker.herokuapp.com"
     base_path = "/booking"
